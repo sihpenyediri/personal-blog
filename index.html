@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Pribadi — Irfan Ramadhan</title>
+  <meta name="description" content="Catatan harian, proyek, dan pemikiran Irfan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Beranda">
+        <span class="brand-mark" aria-hidden="true">IR</span>
+        <span class="brand-text">Irfan<span class="dot">.</span>Blog</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#artikel">Artikel</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+    </div>
+
+    <!-- Decorative animated blobs -->
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <h1 class="reveal-up">Halo, saya Irfan—</h1>
+      <p class="lead reveal-up delay-1">
+        Suka ngoprek, menulis, dan membuat hal-hal kecil yang berguna. Di sini saya berbagi catatan,
+        eksperimen, dan perjalanan belajar.
+      </p>
+      <div class="actions reveal-up delay-2">
+        <a class="btn primary" href="#artikel">Baca Artikel</a>
+        <a class="btn ghost" href="#proyek">Lihat Proyek</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts -->
+  <main class="container content">
+    <section id="artikel" class="section">
+      <div class="section-head">
+        <h2 class="reveal-up">Tulisan Terbaru</h2>
+        <p class="muted reveal-up delay-1">Beberapa tulisan terakhir yang saya publikasikan.</p>
+      </div>
+      <div class="grid posts">
+        <!-- Card 1 -->
+        <article class="card reveal-fade">
+          <a class="thumb" href="#" aria-label="Baca artikel">
+            <img src="https://picsum.photos/seed/kode/800/500" alt="Ilustrasi artikel tentang ngoding" loading="lazy">
+          </a>
+          <div class="card-body">
+            <div class="meta">
+              <span>02 Sep 2025</span> • <span>3 menit</span>
+            </div>
+            <h3><a href="#">Membangun Blog Ringan Tanpa Framework</a></h3>
+            <p>Catatan singkat membuat blog statis cepat dengan HTML dan CSS modern.</p>
+            <a class="readmore" href="#">Baca selengkapnya →</a>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card reveal-fade delay-1">
+          <a class="thumb" href="#" aria-label="Baca artikel">
+            <img src="https://picsum.photos/seed/uiux/800/500" alt="Ilustrasi UI/UX" loading="lazy">
+          </a>
+          <div class="card-body">
+            <div class="meta">
+              <span>26 Agu 2025</span> • <span>5 menit</span>
+            </div>
+            <h3><a href="#">Animasi Mikro yang Bikin UI Terasa Hidup</a></h3>
+            <p>Bagaimana transisi kecil dapat meningkatkan pengalaman pengguna.</p>
+            <a class="readmore" href="#">Baca selengkapnya →</a>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card reveal-fade delay-2">
+          <a class="thumb" href="#" aria-label="Baca artikel">
+            <img src="https://picsum.photos/seed/productive/800/500" alt="Ilustrasi produktivitas" loading="lazy">
+          </a>
+          <div class="card-body">
+            <div class="meta">
+              <span>20 Agu 2025</span> • <span>4 menit</span>
+            </div>
+            <h3><a href="#">Kebiasaan Kecil, Hasil Besar</a></h3>
+            <p>Eksperimen membangun kebiasaan produktif yang realistis.</p>
+            <a class="readmore" href="#">Baca selengkapnya →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="proyek" class="section">
+      <div class="section-head">
+        <h2 class="reveal-up">Proyek</h2>
+        <p class="muted reveal-up delay-1">Beberapa hal yang pernah saya kerjakan.</p>
+      </div>
+      <div class="grid projects">
+        <article class="project-card reveal-zoom">
+          <div class="pc-head">
+            <h3>IPGrit</h3>
+            <span class="badge">Game</span>
+          </div>
+          <p>Game ringan bertema pantang menyerah, dibuat untuk belajar desain level & logika.</p>
+          <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+        </article>
+        <article class="project-card reveal-zoom delay-1">
+          <div class="pc-head">
+            <h3>IRshop</h3>
+            <span class="badge">UI Kit</span>
+          </div>
+          <p>Komponen UI e-commerce minimalis untuk eksperimen React & Tailwind.</p>
+          <a class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
+        </article>
+        <article class="project-card reveal-zoom delay-2">
+          <div class="pc-head">
+            <h3>Mana Ada?</h3>
+            <span class="badge">YouTube</span>
+          </div>
+          <p>Channel eksperimen komedi ringan dan eksplorasi ide-ide random.</p>
+          <a class="btn small" href="#" target="_blank" rel="noopener">YouTube</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="tentang" class="section about">
+      <div class="about-card reveal-fade">
+        <img class="avatar" src="https://picsum.photos/seed/irfan/180/180" alt="Foto profil Irfan" loading="lazy">
+        <div>
+          <h2>Tentang Saya</h2>
+          <p>Saya lulusan RPL yang suka bikin web, main gim, dan ngulik hal baru. Blog ini tempat saya menuangkan ide dan dokumentasi belajar.</p>
+          <ul class="about-list">
+            <li>🏠 Depok</li>
+            <li>✉️ irfanramadhan5341@gmail.com</li>
+            <li>💼 Terbuka untuk kolaborasi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Irfan Ramadhan — Dibuat dengan HTML & CSS.</p>
+      <a class="to-top" href="#top" aria-label="Kembali ke atas">↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Tahun dinamis
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Preferensi reduced motion
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) {
+      document.documentElement.classList.add('reduced-motion');
+    }
+
+    // Sederhana: trigger animasi reveal on scroll
+    const reveals = document.querySelectorAll('.reveal-up, .reveal-fade, .reveal-zoom');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
